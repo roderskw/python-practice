@@ -7,20 +7,20 @@ A word is a maximal substring consisting of non-space characters only.
 Input: s = "Hello World"
 Output: 5
 ```
-Explanation: The last word is "World" with length 5.
+* Explanation: The last word is "World" with length 5.
 
 ```text
 Input: s = "   fly me   to   the moon  "
 Output: 4
 ```
 
-Explanation: The last word is "moon" with length 4.
+* Explanation: The last word is "moon" with length 4.
 
 ```text
 Input: s = "luffy is still joyboy"
 Output: 6
 ```
-Explanation: The last word is "joyboy" with length 6.
+* Explanation: The last word is "joyboy" with length 6.
 Constraints
 
 * 1 <= s.length <= 104
