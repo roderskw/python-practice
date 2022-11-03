@@ -1,29 +1,26 @@
-def isSubsequence(self, s: str, t: str) -> bool:
-    currentMax = int(0)
-    for x in s:
-        if(t.find(x) == -1):  
-            return False
+class Solution(object):
+    def isSubsequence(self, s: str, t: str) -> bool:
+        i = int(-1)
+        for x in s:
+            i = t.find(x, i + 1)
+            if(i == -1):
+                return False
 
-        if(t.find(x) < currentMax): 
-            return False 
+        return True
 
-        currentMax = t.find(x)
-        
-    return True
-
-
+a = Solution()
 s = "axc"
 t = "ahbgdc"
 
-print(isSubsequence(0, s, t))
+print("expected = False \noutput   = " + str(a.isSubsequence( s, t)))
 
 
-a = "abc"
+ab = "abc"
 b = "ahbgdc"
 
-print(isSubsequence(0, a, b))
+print("expected = True \noutput   = " + str(a.isSubsequence( ab, b)))
 
 c = "aaaaaa"
 d = "bbaaaa"
 
-print(isSubsequence(0, c, d))
+print("expected = False \noutput   = " + str(a.isSubsequence( c, d)))
