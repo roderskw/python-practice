@@ -14,22 +14,3 @@ class Solution:
                 break
             i += 1
         return prefix
-        
-             
-a = Solution()
-
-strs = ["flower","flow","flight"]
-
-print("expected = fl \noutput   = " + str(a.longestCommonPrefix(strs)))
-
-strs = ["dog","racecar","car"]
-
-print("expected =  \noutput   = " + str(a.longestCommonPrefix(strs)))
-
-strs = ["flower","flow","flowers"]
-
-print("expected = flow \noutput   = " + str(a.longestCommonPrefix(strs)))
-
-strs = ["flower","flower","flower"]
-
-print("expected = flower \noutput   = " + str(a.longestCommonPrefix(strs)))
